@@ -280,5 +280,71 @@
     "title": "鄭朝方戰新竹縣長 賴清德讚竹北成功治理經驗",
     "date": "2026-06-10",
     "url": "https://udn.com/news/story/124652/9557874"
+  },
+  "set-debate-ntpc": {
+    "publisher": "三立新聞（YouTube 直播）",
+    "title": "新北市長公辦政見辯論會",
+    "date": "2026-11-13",
+    "url": "https://www.youtube.com/live/G0i2jCMTlpc"
+  },
+  "ttv-lee-20261112": {
+    "publisher": "台視新聞（YouTube 直播）",
+    "title": "新北市長選戰 李四川專訪",
+    "date": "2026-11-12",
+    "url": "https://www.youtube.com/live/GdLp8XYbi5U"
+  },
+  "ttv-su-20261111": {
+    "publisher": "台視新聞（YouTube 直播）",
+    "title": "新北市長選戰 蘇巧慧專訪",
+    "date": "2026-11-11",
+    "url": "https://www.youtube.com/live/qkZuWof8_r8"
+  },
+  "rti-1051282": {
+    "publisher": "中央廣播電臺",
+    "title": "新北市長選戰／李四川承諾4年啟動大巨蛋 蘇巧慧喊百日成立都更局",
+    "date": "2026-11-13",
+    "url": "https://www.rti.org.tw/news?uid=3&pid=1051282"
+  },
+  "su-official": {
+    "publisher": "蘇巧慧官方網站",
+    "title": "蘇巧慧官網",
+    "date": "2026-11",
+    "url": "https://chiao.tw/"
+  },
+  "cna-202608190134": {
+    "publisher": "中央社",
+    "title": "李四川推都更 成立委員會檢討容積打通卡關瓶頸",
+    "date": "2026-08-19",
+    "url": "https://cna.com.tw/news/aloc/202608190134.aspx"
+  },
+  "cna-202608190269": {
+    "publisher": "中央社",
+    "title": "蘇巧慧主張成立都更局 提升政府效能增加政策誘因",
+    "date": "2026-08-19",
+    "url": "https://cna.com.tw/news/aloc/202608190269.aspx"
+  },
+  "ettoday-3222101": {
+    "publisher": "ETtoday新聞雲",
+    "title": "李四川批設立都更局添負擔 蘇巧慧：若委員會可行台北現在就能做",
+    "date": "2026-08-19",
+    "url": "https://www.ettoday.net/news/20260819/3222101.htm"
+  },
+  "udn-9702974": {
+    "publisher": "聯合新聞網",
+    "title": "都更議題交鋒 李四川批蘇巧慧「可能不懂市政」",
+    "date": "2026-08-20",
+    "url": "https://udn.com/news/story/6656/9702974"
+  },
+  "udn-9645143": {
+    "publisher": "聯合新聞網",
+    "title": "新北大巨蛋／李四川、蘇巧慧 表態挺蛋",
+    "date": "2026-07",
+    "url": "https://udn.com/news/story/7323/9645143"
+  },
+  "ltn-1765465": {
+    "publisher": "自由時報",
+    "title": "蘇巧慧宣示成立都市更新局、試辦青年育兒宅租期二十年",
+    "date": "2026-08",
+    "url": "https://news.ltn.com.tw/news/politics/paper/1765465"
   }
 }
