@@ -1,0 +1,130 @@
+{
+  "id": "cheng-chao-fang",
+  "name": "鄭朝方",
+  "region": "hsinchu-county",
+  "party": "民主進步黨",
+  "ballotNo": null,
+  "incumbent": false,
+  "status": "full",
+  "photo": null,
+  "theme": {
+    "primary": "#1B9E5A",
+    "secondary": "#9BE3B9",
+    "basis": "party",
+    "note": "未查到明確主視覺色，暫用政黨代表色",
+    "sources": [],
+    "pattern": null
+  },
+  "tagline": "「竹北經驗、竹縣實現」",
+  "taglineSources": [
+    "gvm-134078"
+  ],
+  "experience": [
+    {
+      "period": "2022–",
+      "title": "竹北市長（現任）",
+      "sources": [
+        "gvm-134078",
+        "udn-9557874"
+      ]
+    },
+    {
+      "period": "2021",
+      "title": "總統府顧問、行政院顧問",
+      "sources": [
+        "gvm-134078"
+      ]
+    },
+    {
+      "period": "",
+      "title": "曾任民進黨客家事務部主任、發言人",
+      "sources": [
+        "gvm-134078"
+      ]
+    }
+  ],
+  "highlights": [
+    "transport",
+    "tourism",
+    "eldercare"
+  ],
+  "policies": {
+    "transport": {
+      "summary": "爭取增設二重交流道，改善台 68 線與國道銜接。",
+      "points": [
+        "爭取增設二重交流道，改善台 68 線快速道路與國道銜接及通勤動線。",
+        "五峰、尖石原鄉改善道路安全。",
+        "湖口、新豐規劃共同新市中心，整合交通與教育資源。"
+      ],
+      "sources": [
+        "cna-202610130229",
+        "cna-202611010136",
+        "gvm-134078"
+      ],
+      "challenges": []
+    },
+    "eldercare": {
+      "summary": "擴大長者福利、原鄉巡迴醫療。",
+      "points": [
+        "擴大長者福利。",
+        "五峰、尖石原鄉推動巡迴醫療，提升部落醫療資源。"
+      ],
+      "sources": [
+        "cna-202610130229",
+        "cna-202611010136"
+      ],
+      "challenges": []
+    },
+    "tourism": {
+      "summary": "內灣、飛鳳山觀光，關西新埔客家文化觀光行銷。",
+      "points": [
+        "帶動橫山內灣觀光、芎林飛鳳山觀光發展。",
+        "關西、新埔以客家文化特色做觀光行銷；牛欄河採「減法美學」維持自然樣貌。"
+      ],
+      "sources": [
+        "cna-202611010136",
+        "gvm-134078"
+      ],
+      "challenges": []
+    },
+    "education": {
+      "summary": "打造圖書館與共學空間，原鄉「山林系圖書館」。",
+      "points": [
+        "竹東打造圖書館與共學空間；原鄉推動山林系圖書館。",
+        "以竹北福德圖書館改造為例：改造後每日平均入館人次由約 300 人增至 1500 人。"
+      ],
+      "sources": [
+        "cna-202610130229",
+        "cna-202611010136",
+        "cna-202610040118"
+      ],
+      "challenges": []
+    },
+    "greening": {
+      "summary": "升級竹東河濱公園、整治中興河道。",
+      "points": [
+        "升級竹東河濱公園、整治中興河道。",
+        "主張「美學不一定要花大錢」，把美感融入建設細節。"
+      ],
+      "sources": [
+        "cna-202610130229",
+        "cna-202610040118"
+      ],
+      "challenges": []
+    }
+  },
+  "controversies": [
+    {
+      "title": "施政「好看而不實用」",
+      "by": "徐欣瑩（對手）",
+      "byType": "opponent",
+      "date": "2026-10-28",
+      "content": "徐欣瑩受訪時點名批評鄭朝方的施政「好看而不實用」。",
+      "sources": [
+        "gvm-134076"
+      ],
+      "response": null
+    }
+  ],
+  "updated": "2026-11-16"
+}

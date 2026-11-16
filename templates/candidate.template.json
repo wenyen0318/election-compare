@@ -7,6 +7,7 @@
   "incumbent": false,
   "status": "stub",
   "photo": null,
+  "theme": { "primary": "#5B6B82", "secondary": "#C9D3E0", "basis": "neutral", "note": "資料整理中，使用中性色", "sources": [] },
   "tagline": "已依法完成登記參選，政見資料整理中",
   "taglineSources": ["登記名單的來源id"],
   "experience": [

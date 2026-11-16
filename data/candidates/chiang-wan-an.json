@@ -6,15 +6,35 @@
   "ballotNo": null,
   "incumbent": true,
   "status": "full",
-  "photo": null,
+  "photo": "assets/photos/chiang-wan-an.jpg",
   "tagline": "以施政成果、行政經驗爭取連任",
-  "taglineSources": ["pts-834975"],
-  "experience": [
-    { "period": "2022–", "title": "臺北市長（現任）", "sources": ["pts-834975"] },
-    { "period": "2016–2022", "title": "立法委員（臺北市第3選區）", "sources": [] },
-    { "period": "", "title": "執業律師", "sources": [] }
+  "taglineSources": [
+    "pts-834975"
   ],
-  "highlights": ["economy", "renewal", "childcare"],
+  "experience": [
+    {
+      "period": "2022–",
+      "title": "臺北市長（現任）",
+      "sources": [
+        "pts-834975"
+      ]
+    },
+    {
+      "period": "2016–2022",
+      "title": "立法委員（臺北市第3選區）",
+      "sources": []
+    },
+    {
+      "period": "",
+      "title": "執業律師",
+      "sources": []
+    }
+  ],
+  "highlights": [
+    "economy",
+    "renewal",
+    "childcare"
+  ],
   "policies": {
     "childcare": {
       "summary": "延續並擴大「好孕專車」，推動育兒減工時與「校校有公托」。",
@@ -23,26 +43,53 @@
         "育兒「減工時不減薪」，辯論中表示已有 480 家企業響應。",
         "預計推動「校校有公托」，並提及婦幼專責醫院。"
       ],
-      "sources": ["pts-834975", "pts-debate-tpe"],
+      "sources": [
+        "pts-834975",
+        "pts-debate-tpe"
+      ],
       "challenges": [
         {
-          "by": "沈伯洋（對手）", "byType": "opponent", "date": "2026-10-31",
+          "by": "沈伯洋（對手）",
+          "byType": "opponent",
+          "date": "2026-10-31",
           "content": "質疑蔣萬安未出席托育、兒少相關會議，並提及剴剴案相關會議曾流會。",
-          "sources": ["pts-debate-tpe"],
-          "response": { "date": "2026-10-31", "content": "表示親自主持過 4 次剴剴案會議，要對方不要糾結於是否出席。", "sources": ["pts-debate-tpe"] }
+          "sources": [
+            "pts-debate-tpe"
+          ],
+          "response": {
+            "date": "2026-10-31",
+            "content": "表示親自主持過 4 次剴剴案會議，要對方不要糾結於是否出席。",
+            "sources": [
+              "pts-debate-tpe"
+            ]
+          }
         },
         {
-          "by": "沈伯洋（對手）", "byType": "opponent", "date": "2026-10-31",
+          "by": "沈伯洋（對手）",
+          "byType": "opponent",
+          "date": "2026-10-31",
           "content": "質疑市府對兒虐案件的處理標準不一致。",
-          "sources": ["pts-debate-tpe"],
-          "response": { "date": "2026-10-31", "content": "表示已第一時間處置相關機構與涉案人，並反問對方為何不支持加重兒虐刑責。", "sources": ["pts-debate-tpe"] }
+          "sources": [
+            "pts-debate-tpe"
+          ],
+          "response": {
+            "date": "2026-10-31",
+            "content": "表示已第一時間處置相關機構與涉案人，並反問對方為何不支持加重兒虐刑責。",
+            "sources": [
+              "pts-debate-tpe"
+            ]
+          }
         }
       ]
     },
     "eldercare": {
       "summary": "擴大敬老卡適用範圍。",
-      "points": ["辯論中提及敬老卡適用範圍擴大；目前查到的資料未見更完整的長照政見說明。"],
-      "sources": ["pts-debate-tpe"],
+      "points": [
+        "辯論中提及敬老卡適用範圍擴大；目前查到的資料未見更完整的長照政見說明。"
+      ],
+      "sources": [
+        "pts-debate-tpe"
+      ],
       "challenges": []
     },
     "transport": {
@@ -52,12 +99,18 @@
         "推動捷運東環段。",
         "改善內湖交通。"
       ],
-      "sources": ["pts-debate-tpe"],
+      "sources": [
+        "pts-debate-tpe"
+      ],
       "challenges": [
         {
-          "by": "沈伯洋（對手）", "byType": "opponent", "date": "2026-10-31",
+          "by": "沈伯洋（對手）",
+          "byType": "opponent",
+          "date": "2026-10-31",
           "content": "質疑公館圓環拆除後，該處事故率又回到第一。",
-          "sources": ["pts-debate-tpe"],
+          "sources": [
+            "pts-debate-tpe"
+          ],
           "response": null
         }
       ]
@@ -69,32 +122,64 @@
         "以輝達海外總部落腳北投士林科技園區為施政成果。",
         "提出松山機場遷建，原址規劃為台北 AI 園區，認為該地具備足夠面積與產業區位。"
       ],
-      "sources": ["pts-834975", "pts-debate-tpe"],
+      "sources": [
+        "pts-834975",
+        "pts-debate-tpe"
+      ],
       "challenges": [
         {
-          "by": "沈伯洋（對手）", "byType": "opponent", "date": "2026-10-31",
+          "by": "沈伯洋（對手）",
+          "byType": "opponent",
+          "date": "2026-10-31",
           "content": "質疑松機遷建未在 9 次行政院會議中提出、答不出專案報告時程，且「AI 紅利 12 兆」的計算有誤。",
-          "sources": ["pts-debate-tpe"],
-          "response": { "date": "2026-10-31", "content": "表示 2023 年已發公文向中央表達立場，並強調 AI 園區稅收可惠及市民與桃園醫療。（沈伯洋再回應：政院回函僅是討論可能性，並非正式計畫。）", "sources": ["pts-debate-tpe"] }
+          "sources": [
+            "pts-debate-tpe"
+          ],
+          "response": {
+            "date": "2026-10-31",
+            "content": "表示 2023 年已發公文向中央表達立場，並強調 AI 園區稅收可惠及市民與桃園醫療。（沈伯洋再回應：政院回函僅是討論可能性，並非正式計畫。）",
+            "sources": [
+              "pts-debate-tpe"
+            ]
+          }
         },
         {
-          "by": "沈伯洋（對手）", "byType": "opponent", "date": "2026-11-09",
+          "by": "沈伯洋（對手）",
+          "byType": "opponent",
+          "date": "2026-11-09",
           "content": "認為市府最該做的是整體產業規劃，要求說明 AI 產業的 20 年規劃。",
-          "sources": ["pts-834975"],
+          "sources": [
+            "pts-834975"
+          ],
           "response": null
         }
       ]
     },
     "education": {
       "summary": "免費營養午餐、班班喝鮮奶。",
-      "points": ["推動免費營養午餐。", "「班班喝鮮奶」。"],
-      "sources": ["pts-debate-tpe"],
+      "points": [
+        "推動免費營養午餐。",
+        "「班班喝鮮奶」。"
+      ],
+      "sources": [
+        "pts-debate-tpe"
+      ],
       "challenges": [
         {
-          "by": "沈伯洋（對手）", "byType": "opponent", "date": "2026-10-31",
+          "by": "沈伯洋（對手）",
+          "byType": "opponent",
+          "date": "2026-10-31",
           "content": "詢問金華國中與成淵國中的食安事件，市府處理方式為何不同。",
-          "sources": ["pts-debate-tpe"],
-          "response": { "date": "2026-10-31", "content": "表示成淵國中也已立即處置，並反駁對方不了解市政。", "sources": ["pts-debate-tpe"] }
+          "sources": [
+            "pts-debate-tpe"
+          ],
+          "response": {
+            "date": "2026-10-31",
+            "content": "表示成淵國中也已立即處置，並反駁對方不了解市政。",
+            "sources": [
+              "pts-debate-tpe"
+            ]
+          }
         }
       ]
     },
@@ -106,19 +191,36 @@
         "針對 1974 年（民國 63 年）以前的潛在危險建物提供防災型容積獎勵。",
         "輔導信維整宅、南機場、斯文里等案加速推動；海砂屋、紅黃單建物限期補強。"
       ],
-      "sources": ["pts-834975", "pts-debate-tpe"],
+      "sources": [
+        "pts-834975",
+        "pts-debate-tpe"
+      ],
       "challenges": []
     },
     "greening": {
       "summary": "以 4 年種樹逾 4 萬棵為成果。",
-      "points": ["表示 4 年來已種植 4 萬 2250 棵樹。"],
-      "sources": ["pts-debate-tpe"],
+      "points": [
+        "表示 4 年來已種植 4 萬 2250 棵樹。"
+      ],
+      "sources": [
+        "pts-debate-tpe"
+      ],
       "challenges": [
         {
-          "by": "沈伯洋（對手）", "byType": "opponent", "date": "2026-10-31",
+          "by": "沈伯洋（對手）",
+          "byType": "opponent",
+          "date": "2026-10-31",
           "content": "質疑松山區樹冠覆蓋減少。",
-          "sources": ["pts-debate-tpe"],
-          "response": { "date": "2026-10-31", "content": "表示樹冠減少不等於市府砍樹，相關土地多為私人開發、中央機關及大學所有。", "sources": ["pts-debate-tpe"] }
+          "sources": [
+            "pts-debate-tpe"
+          ],
+          "response": {
+            "date": "2026-10-31",
+            "content": "表示樹冠減少不等於市府砍樹，相關土地多為私人開發、中央機關及大學所有。",
+            "sources": [
+              "pts-debate-tpe"
+            ]
+          }
         }
       ]
     }
@@ -126,18 +228,42 @@
   "controversies": [
     {
       "title": "東門市場茄苳樹遭移除",
-      "by": "沈伯洋（對手）", "byType": "opponent", "date": "2026-10-31",
+      "by": "沈伯洋（對手）",
+      "byType": "opponent",
+      "date": "2026-10-31",
       "content": "質疑東門市場茄苳樹遭誤砍，市府的作業 SOP 出了什麼問題。",
-      "sources": ["pts-debate-tpe"],
-      "response": { "date": "2026-10-31", "content": "表示市府原本要求廠商移植，發現樹木遭移除後已嚴懲公園處長及廠商；辯論中未直接說明 SOP 環節。", "sources": ["pts-debate-tpe"] }
+      "sources": [
+        "pts-debate-tpe"
+      ],
+      "response": {
+        "date": "2026-10-31",
+        "content": "表示市府原本要求廠商移植，發現樹木遭移除後已嚴懲公園處長及廠商；辯論中未直接說明 SOP 環節。",
+        "sources": [
+          "pts-debate-tpe"
+        ]
+      }
     },
     {
       "title": "無菸城市吸菸區設施、城市降溫措施",
-      "by": "沈伯洋（對手）", "byType": "opponent", "date": "2026-09-02",
+      "by": "沈伯洋（對手）",
+      "byType": "opponent",
+      "date": "2026-09-02",
       "content": "登記參選時批評市府推無菸城市時設置的吸菸區設施遭市民反彈後拆除，以及城市降溫政策中「砍樹」與要價約九百萬元的大型遮陽傘。",
-      "sources": ["mirror-shen-register"],
+      "sources": [
+        "mirror-shen-register"
+      ],
       "response": null
     }
   ],
-  "updated": "2026-11-16"
+  "updated": "2026-11-16",
+  "theme": {
+    "primary": "#1F5FBF",
+    "secondary": "#FFC93C",
+    "basis": "campaign",
+    "note": "「台北安可」主視覺為藍、黃色系",
+    "sources": [
+      "mirror-setn-1914573"
+    ],
+    "pattern": "encore"
+  }
 }

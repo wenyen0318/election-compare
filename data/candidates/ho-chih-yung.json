@@ -8,12 +8,28 @@
   "status": "full",
   "photo": null,
   "tagline": "「亞洲波士頓」願景",
-  "taglineSources": ["ltn-5598552"],
-  "experience": [
-    { "period": "", "title": "前國民黨發言人", "sources": ["udn-9131351"] },
-    { "period": "", "title": "清華大學通識中心兼任助理教授", "sources": ["udn-9131351"] }
+  "taglineSources": [
+    "ltn-5598552"
   ],
-  "highlights": ["economy"],
+  "experience": [
+    {
+      "period": "",
+      "title": "前國民黨發言人",
+      "sources": [
+        "udn-9131351"
+      ]
+    },
+    {
+      "period": "",
+      "title": "清華大學通識中心兼任助理教授",
+      "sources": [
+        "udn-9131351"
+      ]
+    }
+  ],
+  "highlights": [
+    "economy"
+  ],
   "policies": {
     "economy": {
       "summary": "「市民 16800 生活支持金」：每位設籍市民每年 16,800 元、限市內消費。",
@@ -23,13 +39,26 @@
         "理由：科學園區帶來物價、房價、交通等外部成本，由全體市民承擔。",
         "「亞洲波士頓」：以大學、產業與城市生活共同發展為願景。"
       ],
-      "sources": ["ltn-5590732", "ltn-5598552"],
+      "sources": [
+        "ltn-5590732",
+        "ltn-5598552"
+      ],
       "challenges": [
         {
-          "by": "外界說法", "byType": "public", "date": "2026-10",
+          "by": "外界說法",
+          "byType": "public",
+          "date": "2026-10",
           "content": "外界流傳「何志勇當選，現有福利都會沒有」。",
-          "sources": ["ltn-5590732"],
-          "response": { "date": "2026-10", "content": "稱這是造謠，表示承接市政不只是維持，還要做得更好。", "sources": ["ltn-5590732"] }
+          "sources": [
+            "ltn-5590732"
+          ],
+          "response": {
+            "date": "2026-10",
+            "content": "稱這是造謠，表示承接市政不只是維持，還要做得更好。",
+            "sources": [
+              "ltn-5590732"
+            ]
+          }
         }
       ]
     }
@@ -37,11 +66,30 @@
   "controversies": [
     {
       "title": "未獲國民黨同意參選",
-      "by": "國民黨新竹市黨部、市議會黨團", "byType": "opponent", "date": "2026-07-20",
+      "by": "國民黨新竹市黨部、市議會黨團",
+      "byType": "opponent",
+      "date": "2026-07-20",
       "content": "國民黨定調支持高虹安連任、不提名市長人選，黨部持續勸說；何志勇最後未獲黨報准即登記，媒體報導恐面臨黨紀處分。",
-      "sources": ["udn-9639290", "ltn-5563478"],
-      "response": { "date": "2026-07-20", "content": "表示「藍白合」是假議題，選舉應回歸新竹市政，若未獲藍營支持將以無黨籍參選到底。", "sources": ["udn-9639290"] }
+      "sources": [
+        "udn-9639290",
+        "ltn-5563478"
+      ],
+      "response": {
+        "date": "2026-07-20",
+        "content": "表示「藍白合」是假議題，選舉應回歸新竹市政，若未獲藍營支持將以無黨籍參選到底。",
+        "sources": [
+          "udn-9639290"
+        ]
+      }
     }
   ],
-  "updated": "2026-11-16"
+  "updated": "2026-11-16",
+  "theme": {
+    "primary": "#5B6B82",
+    "secondary": "#C9D3E0",
+    "basis": "neutral",
+    "note": "無黨籍且未查到明確主視覺色，使用中性色",
+    "sources": [],
+    "pattern": null
+  }
 }

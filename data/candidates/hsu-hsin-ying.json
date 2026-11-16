@@ -1,0 +1,112 @@
+{
+  "id": "hsu-hsin-ying",
+  "name": "徐欣瑩",
+  "region": "hsinchu-county",
+  "party": "中國國民黨",
+  "ballotNo": null,
+  "incumbent": false,
+  "status": "full",
+  "photo": null,
+  "theme": {
+    "primary": "#1A4E9E",
+    "secondary": "#8EC5FF",
+    "basis": "party",
+    "note": "未查到明確主視覺色，暫用政黨代表色",
+    "sources": [],
+    "pattern": null
+  },
+  "tagline": "「雙AI」願景：科技AI＋有愛AI",
+  "taglineSources": [
+    "nownews-6845328"
+  ],
+  "experience": [
+    {
+      "period": "",
+      "title": "曾任兩屆新竹縣議員",
+      "sources": [
+        "gvm-134076"
+      ]
+    },
+    {
+      "period": "",
+      "title": "曾兩度當選立法委員",
+      "sources": [
+        "gvm-134076"
+      ]
+    },
+    {
+      "period": "2026",
+      "title": "國民黨新竹縣長黨內初選勝出（第二次角逐縣長）",
+      "sources": [
+        "gvm-134076"
+      ]
+    }
+  ],
+  "highlights": [
+    "economy",
+    "childcare",
+    "greening"
+  ],
+  "policies": {
+    "economy": {
+      "summary": "設立 AI 職能訓練中心、青年 AI 工具使用補助金。",
+      "points": [
+        "整合竹科、工研院、大專院校、職訓機構與企業，開設 AI、半導體、資安、數位行銷、智慧製造實作課程。",
+        "提出青年 AI 工具使用補助金等青年政見。",
+        "「科技 AI」用於改善交通、醫療品質與政府便民服務。"
+      ],
+      "sources": [
+        "cna-202610040118",
+        "cnyes-268675",
+        "nownews-6845328"
+      ],
+      "challenges": []
+    },
+    "childcare": {
+      "summary": "「育兒安心 1 小時」減工時不減薪，縣府補助企業。",
+      "points": [
+        "有 12 歲以下子女的受僱者，鼓勵企業每日減少工時 1 小時、薪資不減，縣府提供企業補助。",
+        "協助企業導入彈性上下班、友善排班、部分遠距工作。",
+        "「女性再出發計畫」：因育兒或照顧家庭離開職場的女性，最高 5 萬元啟動金，並搭配職訓與托育資源。"
+      ],
+      "sources": [
+        "cna-202610040118"
+      ],
+      "challenges": []
+    },
+    "eldercare": {
+      "summary": "「有愛 AI」：打造長壽、健康的「長健之鄉」。",
+      "points": [
+        "以「有愛 AI」打造溫暖生活環境，讓 13 鄉鎮市成為長壽、健康的「長健之鄉」；目前查到的報導未列出具體措施。"
+      ],
+      "sources": [
+        "nownews-6845328"
+      ],
+      "challenges": []
+    },
+    "greening": {
+      "summary": "全流域治水、智慧海綿城市示範區。",
+      "points": [
+        "五峰、尖石等上游加強山林保水；北埔、峨眉等農業區推動滯洪設施。",
+        "竹北、湖口等都會區規劃智慧海綿城市示範區，利用校園、公園提升滲透與滯洪能力。",
+        "結合科技監測與流域治理，提升防洪韌性。"
+      ],
+      "sources": [
+        "cna-202610160223"
+      ],
+      "challenges": []
+    },
+    "safety": {
+      "summary": "職場霸凌零容忍、強化勞動檢查。",
+      "points": [
+        "強化職災勞工與工會支持體系，對職場霸凌「零容忍」，強化勞動檢查。"
+      ],
+      "sources": [
+        "cna-202610040118"
+      ],
+      "challenges": []
+    }
+  },
+  "controversies": [],
+  "updated": "2026-11-16"
+}

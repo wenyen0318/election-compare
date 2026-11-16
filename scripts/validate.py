@@ -18,6 +18,10 @@ def load(p):
         return None
 
 issues = load(DATA / "issues.json") or []
+site = load(DATA / "site.json") or {}
+for k in ("slogan", "voteStart", "voteEnd"):
+    if not site.get(k):
+        errors.append(f"site.json：缺少 {k}")
 regions = load(DATA / "regions.json") or []
 sources = load(DATA / "sources.json") or {}
 issue_ids = {i["id"] for i in issues}
@@ -108,6 +112,22 @@ for r in regions:
                 check_qa(q, f"{pw}.challenges[{j}]")
         for j, q in enumerate(c.get("controversies", [])):
             check_qa(q, f"{w} controversies[{j}]", need_title=True)
+        th = c.get("theme")
+        HEX = re.compile(r"^#[0-9A-Fa-f]{6}$")
+        if not th:
+            errors.append(f"{w}：缺少 theme（主題色，見 AGENTS.md 7.1）")
+        else:
+            for k in ("primary", "secondary"):
+                if not HEX.match(th.get(k, "")):
+                    errors.append(f"{w}：theme.{k} 須為 6 碼 HEX 色碼")
+            if th.get("basis") not in ("campaign", "party", "custom", "neutral"):
+                errors.append(f"{w}：theme.basis 只能是 campaign / party / custom / neutral")
+            if th.get("pattern") not in (None, "stars", "waves", "encore"):
+                errors.append(f"{w}：theme.pattern 只能是 null / stars / waves / encore（新增圖樣要同步改 app.js 的 PATTERNS）")
+            check_sources(th.get("sources"), f"{w} theme", required=th.get("basis") == "campaign")
+        if c.get("photo"):
+            if not (ROOT / c["photo"]).exists():
+                warnings.append(f"{w}：照片 {c['photo']} 尚未上傳（網頁會先顯示姓氏頭像）")
         if c.get("status") == "full" and not c.get("policies"):
             errors.append(f"{w}：status=full 但沒有任何政見")
 

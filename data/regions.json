@@ -5,8 +5,17 @@
     "office": "臺北市長",
     "election": "2026 地方公職人員選舉（11/28 投票）",
     "intro": "現任市長尋求連任，共 6 人登記參選。",
-    "candidates": ["chiang-wan-an", "puma-shen", "kuo-hsi", "hsiao-wen-chien", "tang-hsin-min", "lin-chih-cheng"],
-    "sources": ["tvbs-tpe-list"]
+    "candidates": [
+      "chiang-wan-an",
+      "puma-shen",
+      "kuo-hsi",
+      "hsiao-wen-chien",
+      "tang-hsin-min",
+      "lin-chih-cheng"
+    ],
+    "sources": [
+      "tvbs-tpe-list"
+    ]
   },
   {
     "id": "new-taipei",
@@ -14,8 +23,14 @@
     "office": "新北市長",
     "election": "2026 地方公職人員選舉（11/28 投票）",
     "intro": "現任市長任期屆滿，為開放席次。",
-    "candidates": ["lee-szu-chuan", "su-chiao-hui", "su-hui-huang"],
-    "sources": ["tvbs-all-list"]
+    "candidates": [
+      "lee-szu-chuan",
+      "su-chiao-hui",
+      "su-hui-huang"
+    ],
+    "sources": [
+      "tvbs-all-list"
+    ]
   },
   {
     "id": "hsinchu-city",
@@ -23,7 +38,29 @@
     "office": "新竹市長",
     "election": "2026 地方公職人員選舉（11/28 投票）",
     "intro": "現任市長尋求連任，共 3 人登記參選。",
-    "candidates": ["kao-hung-an", "chuang-ching-cheng", "ho-chih-yung"],
-    "sources": ["ltn-5563478"]
+    "candidates": [
+      "kao-hung-an",
+      "chuang-ching-cheng",
+      "ho-chih-yung"
+    ],
+    "sources": [
+      "ltn-5563478"
+    ]
+  },
+  {
+    "id": "hsinchu-county",
+    "name": "新竹縣",
+    "office": "新竹縣長",
+    "election": "2026 地方公職人員選舉（11/28 投票）",
+    "intro": "現任縣長兩任屆滿，為開放席次，共 3 人登記參選。",
+    "candidates": [
+      "hsu-hsin-ying",
+      "cheng-chao-fang",
+      "chu-ting-yu"
+    ],
+    "sources": [
+      "tvbs-all-list",
+      "cnyes-268675"
+    ]
   }
 ]

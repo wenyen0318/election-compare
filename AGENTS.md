@@ -38,11 +38,13 @@ index.html                      首頁：選擇地區
 ├── index.html  region.html  candidate.html  issue.html   頁面骨架（不放內容）
 ├── assets/
 │   ├── style.css                唯一的樣式表
+│   ├── photos/<候選人id>.jpg     候選人照片（見 7.2）
 │   └── app.js                   唯一的程式，讀 data/ 後渲染
 ├── data/
 │   ├── regions.json             地區清單（每個地區列出候選人 id）
 │   ├── issues.json              議題清單（id、名稱、icon、說明）
 │   ├── sources.json             來源登錄表（所有引用都要先登錄在這裡）
+│   ├── site.json                全站設定（標語、投票開始／結束時間）
 │   └── candidates/<候選人id>.json  每位候選人一個檔案
 ├── templates/
 │   ├── candidate.template.json  新增候選人時複製這份
@@ -55,7 +57,7 @@ index.html                      首頁：選擇地區
 
 | 東西 | 規則 | 例子 |
 |---|---|---|
-| 地區 id | 小寫英文＋連字號 | `taipei`、`new-taipei`、`hsinchu-city`、`hsinchu-county` |
+| 地區 id | 小寫英文＋連字號 | `taipei`、`new-taipei`、`hsinchu-city`、`hsinchu-county`（目前收錄這 4 個） |
 | 候選人 id | 姓名常用英文拼法，小寫＋連字號 | `chiang-wan-an`、`puma-shen` |
 | 候選人檔名 | `data/candidates/<候選人id>.json`，**檔名必須等於 id** | `kao-hung-an.json` |
 | 來源 id | `<媒體簡稱>-<文章編號或主題>` | `pts-834975`、`udn-9390741`、`cna-202609160107` |
@@ -146,9 +148,41 @@ index.html                      首頁：選擇地區
 
 ## 7. 視覺規範
 
-- 風格：米白紙張底（`--paper`）、深藍黑字（`--ink`）、中性橘（`--accent`）作互動色；標題用襯線字。
-- **不得使用政黨代表色**（藍、綠、白、橘色系與政黨連結）。候選人頭像底色由 id 雜湊自中性灰階色盤產生。
-- 照片規則：`photo` 預設 `null`（顯示姓氏頭像）。只有在取得**中選會選舉公報照片或候選人官方提供且允許使用**的照片時，才放到 `assets/photos/<候選人id>.jpg` 並填路徑；所有候選人要一致（要放就全放）。
+**整體風格：活潑、清新、鼓勵投票。**
+
+- 共用頁（首頁、地區頁、議題比較頁）使用站台色：紫羅蘭 `--brand #6c5ce7`＋薄荷 `--mint #2ec4a6`＋陽光黃 `--sun`，淡薄荷底色＋柔和光暈。站台色**不得**改成任何政黨或候選人的顏色。
+- 字體：標題用圓體（`--round`），內文用 Noto Sans TC；卡片大圓角（22px）、按鈕膠囊形。
+- 首頁封面：標語與投票時間讀取 `data/site.json`（`slogan`、`voteStart`、`voteEnd`），倒數計時由 `app.js` 的 `startCountdown()` 處理：投票前倒數、投票中提示、結束後致謝。換一次選舉只改 `site.json`。
+
+### 7.1 候選人主題色 `theme`
+
+每位候選人檔都要有：
+
+```json
+"theme": {
+  "primary": "#F47A20",          // 主色（6 碼 HEX）
+  "secondary": "#FFC46B",        // 輔色（漸層用）
+  "basis": "campaign",           // campaign＝競選主視覺色｜custom＝網站作者指定｜party＝暫用政黨色｜neutral＝中性色
+  "note": "競選主視覺以橘色為主",   // 顯示在候選人頁的說明
+  "sources": ["cna-202608040069"], // basis 為 campaign 時必填
+  "pattern": "waves"              // 候選人頁背景圖樣：null｜stars 星星｜waves 洋流｜encore 安可
+}
+```
+
+- 優先使用**競選主視覺色**（需有報導來源）；查不到時才用政黨代表色並寫明「暫用政黨代表色」；無黨籍且查不到用中性灰 `#5B6B82`。
+- 主題色只用在：候選人頁（封面漸層、標題圓點、政見卡上緣、時間軸）、地區頁候選人卡上緣色帶、議題比較頁該候選人欄位上緣。
+- 不要用主題色改變任何文字內容或排序。
+- `basis: "custom"` 代表由網站作者指定（例如蘇巧慧的 `#FF69B4`），`note` 必須寫明「網站作者指定」，不可假裝是競選官方色。
+- `pattern` 圖樣由 `app.js` 的 `PATTERNS` 以主題色即時產生 SVG（整頁背景＋封面各一層）。目前有：`stars`（蘇巧慧）、`waves`（沈伯洋「洋流」）、`encore`（蔣萬安「台北安可」）。新增圖樣時：在 `PATTERNS` 加一個函式 → 在 `scripts/validate.py` 的允許清單加上名稱 → 更新本段。圖樣要淡（整頁不透明度約 0.1），不能影響閱讀。
+
+### 7.2 照片 `photo`
+
+- `photo` 填 `assets/photos/<候選人id>.jpg`，照片以**中選會選舉公報照片**或候選人官方提供的公開形象照為限，正方形、至少 400×400。
+- 照片檔不存在時，網頁會自動退回「姓氏頭像」，不會出現破圖。
+- 同一地區的主要候選人（status: full）應一致：一位有照片，其他人也要補上。
+
+### 7.3 其他
+
 - 排序：中選會公布號次後依 `ballotNo`；未公布時「資料完整者在前，再依姓名筆畫」，由 `app.js` 的 `sortCandidates()` 處理，**不要手動排**。
 - 響應式：手機寬度下議題比較改為單欄，不要新增橫向捲動。
 
@@ -185,5 +219,5 @@ index.html                      首頁：選擇地區
 - [ ] 沒有改到不該改的 HTML/CSS/JS（只動 data/ 的任務）
 - [ ] 每位新候選人都有 `status`；`full` 至少 1 個議題政見
 - [ ] 所有質疑都有 `response` 欄位（有回應或 `null`）
-- [ ] 沒有評價性用語、沒有政黨色
+- [ ] 沒有評價性用語；共用頁沒有使用政黨或候選人色；每位候選人都有 `theme`
 - [ ] 本機預覽首頁 → 地區 → 候選人 → 議題比較，四頁都正常

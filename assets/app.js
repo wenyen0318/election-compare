@@ -4,7 +4,7 @@
  */
 const NO_RESPONSE = "尚未查找到該候選人回覆";
 const NO_POLICY = "尚未查找到此候選人在本議題的具體政見";
-const AVATAR_TONES = ["#5b6475", "#6b5d52", "#4f6466", "#665a6e", "#5e6650", "#6e5a5a", "#52607a", "#706447"];
+const NEUTRAL_THEME = { primary: "#8a94a8", secondary: "#c9d3e0" };
 
 const $ = (sel) => document.querySelector(sel);
 const qs = (k) => new URLSearchParams(location.search).get(k);
@@ -18,6 +18,7 @@ async function getJSON(path) {
 const loadIssues = () => getJSON("data/issues.json");
 const loadRegions = () => getJSON("data/regions.json");
 const loadSources = () => getJSON("data/sources.json");
+const loadSite = () => getJSON("data/site.json");
 const loadCandidate = (id) => getJSON(`data/candidates/${id}.json`);
 
 /* 排序：有號次依號次；否則資料完整者在前，再依姓名筆畫（避免偏好任何陣營） */
@@ -32,11 +33,28 @@ async function loadRegionCandidates(region) {
   return sortCandidates(await Promise.all(region.candidates.map(loadCandidate)));
 }
 
+/* 候選人頁背景圖樣：依 theme.pattern 產生 SVG，顏色取自候選人主題色。新增圖樣時在這裡加一個函式。 */
+const svgURI = (svg) => `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
+const PATTERNS = {
+  stars: (c, op) => `<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><g fill='${c}' opacity='${op}'><text x='12' y='34' font-size='26'>★</text><text x='96' y='22' font-size='14'>★</text><text x='118' y='92' font-size='30'>★</text><text x='40' y='118' font-size='16'>✦</text><text x='70' y='70' font-size='12'>✦</text><text x='10' y='150' font-size='20'>★</text><text x='130' y='150' font-size='12'>✦</text></g></svg>`,
+  waves: (c, op) => `<svg xmlns='http://www.w3.org/2000/svg' width='240' height='80'><g fill='none' stroke='${c}' stroke-width='3' stroke-linecap='round' opacity='${op}'><path d='M0 20 Q30 4 60 20 T120 20 T180 20 T240 20'/><path d='M0 46 Q30 30 60 46 T120 46 T180 46 T240 46' stroke-width='2'/><path d='M-30 70 Q0 56 30 70 T90 70 T150 70 T210 70 T270 70' stroke-width='1.5'/></g></svg>`,
+  encore: (c, op) => `<svg xmlns='http://www.w3.org/2000/svg' width='300' height='150'><g fill='${c}' opacity='${op}' font-family='sans-serif' font-weight='900'><text x='10' y='50' font-size='34' transform='rotate(-10 10 50)'>安可！</text><text x='160' y='120' font-size='24' transform='rotate(-10 160 120)'>ENCORE</text><text x='200' y='40' font-size='18'>👏</text><text x='40' y='130' font-size='18'>✨</text></g></svg>`,
+};
+function applyPattern(c) {
+  const t = theme(c), make = PATTERNS[t.pattern];
+  if (!make) return;
+  document.body.style.backgroundImage = `${svgURI(make(t.primary, 0.10))}, radial-gradient(circle at 8% 0%, ${t.secondary}55 0, transparent 35%)`;
+  document.body.style.backgroundAttachment = "fixed";
+  $("#profile").style.setProperty("--pattern", svgURI(make("#ffffff", 0.16)));
+  $("#profile").classList.add("has-pattern");
+}
+const theme = (c) => c.theme || NEUTRAL_THEME;
+const themeVars = (c) => `--a1:${theme(c).primary};--a2:${theme(c).secondary}`;
+/* 有照片就顯示照片；照片檔不存在時自動退回姓氏頭像 */
 function avatar(c, cls = "") {
-  let h = 0; for (const ch of c.id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
-  const bg = AVATAR_TONES[h % AVATAR_TONES.length];
-  const inner = c.photo ? `<img src="${esc(c.photo)}" alt="${esc(c.name)}">` : esc(c.name.slice(0, 1));
-  return `<span class="avatar ${cls}" style="background:${bg}" aria-label="${esc(c.name)}">${inner}</span>`;
+  const initial = esc(c.name.slice(0, 1));
+  const inner = c.photo ? `<img src="${esc(c.photo)}" alt="${esc(c.name)}" onerror="this.replaceWith(document.createTextNode('${initial}'))">` : initial;
+  return `<span class="avatar ${cls}" style="${themeVars(c)}" aria-label="${esc(c.name)}">${inner}</span>`;
 }
 
 function srcList(ids, sources) {
@@ -67,15 +85,33 @@ function qaBlock(item, sources, candidateName) {
 function issueById(issues, id) { return issues.find((i) => i.id === id) || { id, name: id, icon: "•" }; }
 
 /* ---------- 頁面：首頁 ---------- */
+function startCountdown(site) {
+  const box = $("#countdown"), start = new Date(site.voteStart), end = new Date(site.voteEnd);
+  const tick = () => {
+    const now = new Date();
+    if (now >= end) { box.innerHTML = `<div class="msg">🗳️ 投票已結束，感謝每一位投下選票的你！</div>`; return; }
+    if (now >= start) { box.innerHTML = `<div class="msg">🗳️ 投票進行中！16:00 前帶著身分證、印章、投票通知單去投票！</div>`; return; }
+    let t = Math.floor((start - now) / 1000);
+    const d = Math.floor(t / 86400); t %= 86400; const h = Math.floor(t / 3600); t %= 3600; const m = Math.floor(t / 60), sec = t % 60;
+    box.innerHTML = [[d, "天"], [h, "時"], [m, "分"], [sec, "秒"]].map(([n, l]) => `<div class="unit"><div class="num">${String(n).padStart(2, "0")}</div><div class="lbl">${l}</div></div>`).join("");
+  };
+  tick(); setInterval(tick, 1000);
+}
+
 async function pageHome() {
+  const site = await loadSite();
+  $("#slogan").textContent = site.slogan;
+  $("#slogan-sub").textContent = `（${site.sloganNote}）距離 ${site.electionName} 投票開始還有`;
+  startCountdown(site);
   const regions = await loadRegions();
   const html = await Promise.all(regions.map(async (r) => {
     const cs = await loadRegionCandidates(r);
-    return `<a class="card" href="region.html?r=${r.id}">
+    return `<a class="card region-card" href="region.html?r=${r.id}">
       <div class="meta">${esc(r.election)}</div>
       <h3>${esc(r.office)}</h3>
       <div class="meta">${esc(r.intro)}｜${cs.length} 位候選人</div>
       <div class="faces-mini">${cs.map((c) => avatar(c)).join("")}</div>
+      <span class="go">看候選人 →</span>
     </a>`;
   }));
   $("#regions").innerHTML = html.join("");
@@ -91,8 +127,8 @@ async function pageRegion() {
   $("#title").textContent = `${r.office}候選人`;
   $("#lead").innerHTML = `${esc(r.intro)}點候選人的臉看個人經歷、主打政見與爭議；點下方議題，直接比較所有候選人在同一議題的政策。${srcInline(r.sources, sources)}`;
   $("#faces").innerHTML = cs.map((c) => `
-    <a class="card face-card" href="candidate.html?id=${c.id}">
-      ${avatar(c)}
+    <a class="card face-card" style="${themeVars(c)}" href="candidate.html?id=${c.id}">
+      <div class="band"></div>${avatar(c)}
       <h3>${esc(c.name)}</h3>
       <div><span class="badge">${esc(c.party)}</span>${c.incumbent ? '<span class="badge inc">現任</span>' : ""}${c.status === "stub" ? '<span class="badge stub">資料整理中</span>' : ""}</div>
       <div class="tagline">${esc(c.tagline || "")}</div>
@@ -110,11 +146,17 @@ async function pageCandidate() {
   const c = await loadCandidate(qs("id"));
   const r = regions.find((x) => x.id === c.region);
   document.title = `${c.name}｜${r.office}候選人｜選前看清楚`;
+  const t = theme(c);
+  document.documentElement.style.setProperty("--c1", t.primary);
+  document.documentElement.style.setProperty("--c2", t.secondary);
+  document.body.classList.add("page-cand");
+  applyPattern(c);
   $("#crumbs").innerHTML = `<a href="index.html">首頁</a> › <a href="region.html?r=${r.id}">${esc(r.name)}</a> › ${esc(c.name)}`;
   $("#profile").innerHTML = `${avatar(c, "lg")}<div>
     <div class="meta">${esc(r.office)}候選人</div><h1>${esc(c.name)}</h1>
     <span class="badge">${esc(c.party)}</span>${c.incumbent ? '<span class="badge inc">現任</span>' : ""}
-    <p class="lead">${esc(c.tagline || "")}</p>${srcInline(c.taglineSources, sources)}</div>`;
+    <p class="lead">${esc(c.tagline || "")}</p>${srcInline(c.taglineSources, sources)}
+    ${c.theme ? `<div class="theme-note">🎨 頁面主題色：${esc(c.theme.note)}${srcList(c.theme.sources, sources).length ? "（" + srcList(c.theme.sources, sources).join("；") + "）" : ""}</div>` : ""}</div>`;
 
   $("#experience").innerHTML = c.experience.length
     ? `<ul class="timeline">${c.experience.map((e) => `<li><span class="period">${esc(e.period || "")}</span>${esc(e.title)}${e.sources.length ? "" : '<span class="unverified">待核對來源</span>'}${srcInline(e.sources, sources)}</li>`).join("")}</ul>`
@@ -154,8 +196,8 @@ async function pageIssue() {
   $("#compare").innerHTML = cs.filter((c) => c.status !== "stub").map((c) => {
     const p = c.policies[issue.id];
     const head = `<a class="col-head" href="candidate.html?id=${c.id}">${avatar(c)}<div><b>${esc(c.name)}</b><div class="meta">${esc(c.party)}${c.incumbent ? "｜現任" : ""}</div></div></a>`;
-    if (!p) return `<div class="card" id="${c.id}">${head}<p class="empty">${c.status === "stub" ? "政見資料整理中。" : NO_POLICY + "。"}</p></div>`;
-    return `<div class="card" id="${c.id}">${head}
+    if (!p) return `<div class="card" style="${themeVars(c)}" id="${c.id}">${head}<p class="empty">${c.status === "stub" ? "政見資料整理中。" : NO_POLICY + "。"}</p></div>`;
+    return `<div class="card" style="${themeVars(c)}" id="${c.id}">${head}
       <p class="summary">${esc(p.summary)}</p><ul>${p.points.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
       ${srcDetails(p.sources, sources)}
       <div class="qa"><h4>💬 質疑與回應</h4>${p.challenges.length ? p.challenges.map((q) => qaBlock(q, sources, c.name)).join("") : '<p class="empty">目前尚未整理到針對此政見的質疑。</p>'}</div>
