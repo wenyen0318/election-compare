@@ -1,0 +1,82 @@
+{
+  "id": "su-chiao-hui",
+  "name": "蘇巧慧",
+  "region": "new-taipei",
+  "party": "民主進步黨",
+  "ballotNo": null,
+  "incumbent": false,
+  "status": "full",
+  "photo": null,
+  "tagline": "主打「新世代」、全齡福利",
+  "taglineSources": ["pts-835153"],
+  "experience": [
+    { "period": "", "title": "立法委員（現任）", "sources": ["udn-9575861"] },
+    { "period": "2016–", "title": "立法委員（新北市選區）", "sources": [] },
+    { "period": "", "title": "執業律師", "sources": [] }
+  ],
+  "highlights": ["childcare", "eldercare", "renewal"],
+  "policies": {
+    "childcare": {
+      "summary": "免費營養午餐、幼兒醫療免部分負擔、疫苗免費、提升托育人員待遇。",
+      "points": [
+        "兒童免費營養午餐。",
+        "幼兒看病住院免部分負擔；腸病毒與輪狀病毒疫苗免費接種。",
+        "公托最大問題在人力，爭取提升托育人員待遇。",
+        "「95 公分的城市」：從孩子視角檢視城市空間；並提出家庭照顧者支持政策。"
+      ],
+      "sources": ["udn-9390741", "pts-799790", "udn-9642137"],
+      "challenges": [
+        {
+          "by": "民眾黨黃國昌陣營", "byType": "opponent", "date": "2026-03-29",
+          "content": "批評蘇巧慧的育兒政見是「撒幣式政策」。",
+          "sources": ["newtalk-1026865"],
+          "response": { "date": "2026-03-29", "content": "表示相關福利政策經審慎評估，是結合基層需求與新北財政狀況提出的負責任規劃。", "sources": ["newtalk-1026865"] }
+        },
+        {
+          "by": "新北市府人士", "byType": "public", "date": "2026-07-02",
+          "content": "針對蘇巧慧稱部分政見已被市府「提前落實」，市府人士表示相關政策市府原就研議，政策涉及龐大經費、須財源到位才能落實。",
+          "sources": ["udn-9603838"],
+          "response": { "date": "2026-07", "content": "表示好的政策提出後大家可以共同討論，只要能改善市民生活都願意一起推動。", "sources": ["udn-9608194"] }
+        }
+      ]
+    },
+    "eldercare": {
+      "summary": "長輩裝假牙補助、升級敬老卡、擴大社區共餐。",
+      "points": [
+        "長輩裝假牙、升級敬老卡等措施。",
+        "協助里長把老人共餐辦得更大、更好。"
+      ],
+      "sources": ["newtalk-1026865", "udn-9603838"],
+      "challenges": []
+    },
+    "tourism": {
+      "summary": "水金九「台車再復興」。",
+      "points": ["表示 2024 年走訪金瓜石時就提出台車再復興構想，認為台車承載居民共同記憶與地方認同。"],
+      "sources": ["newtalk-1042448"],
+      "challenges": [
+        {
+          "by": "李四川競辦", "byType": "opponent", "date": "2026-06-21",
+          "content": "批評蘇巧慧以兩年前影片中的一句話當作市長政見，是跟進李四川 4 月提出的台車政見。",
+          "sources": ["nownews-6848689", "udn-9578248"],
+          "response": { "date": "2026-06-21", "content": "表示無論誰提出，只要對新北有幫助、方向一致，一起推動都是好事。", "sources": ["newtalk-1042448"] }
+        }
+      ]
+    },
+    "renewal": {
+      "summary": "成立一級機關「都更局」，增加人力並導入 AI 審圖。",
+      "points": ["設立都更局提高層級、統合協調，增加員額並導入 AI 審圖等新技術。"],
+      "sources": ["pts-835153"],
+      "challenges": []
+    }
+  },
+  "controversies": [
+    {
+      "title": "胞妹公司獲補助指控",
+      "by": "台灣民眾黨", "byType": "opponent", "date": "2026-06-09",
+      "content": "指控蘇巧慧胞妹擔任 akaSwap 執行長，蘇巧慧涉護航讓該公司連年獲補助，且未依法揭露身分。",
+      "sources": ["cna-202606090349"],
+      "response": { "date": "2026-06-09", "content": "稱這是烏龍爆料，妹妹的公司並非被指涉企業的關係企業，並表示遺憾對方攻擊其家人。", "sources": ["cna-202606090349"] }
+    }
+  ],
+  "updated": "2026-11-16"
+}

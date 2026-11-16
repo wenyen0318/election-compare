@@ -1,0 +1,47 @@
+{
+  "id": "chuang-ching-cheng",
+  "name": "莊競程",
+  "region": "hsinchu-city",
+  "party": "民主進步黨",
+  "ballotNo": null,
+  "incumbent": false,
+  "status": "full",
+  "photo": null,
+  "tagline": "「把新竹市政地基重新打穩」",
+  "taglineSources": ["udn-9443855"],
+  "experience": [
+    { "period": "", "title": "前立法委員", "sources": ["udn-9443855"] },
+    { "period": "", "title": "曾於交通大學從事博士後研究、於生醫工程研究所任教（陽明交大任教約 6 年）", "sources": ["udn-9443855", "ltn-5446775"] }
+  ],
+  "highlights": ["transport", "education"],
+  "policies": {
+    "transport": {
+      "summary": "新竹捷運 4 年內動工、公車路網重新盤點、人本交通。",
+      "points": [
+        "加速新竹捷運可行性研究與綜合規劃，目標 4 年內動工，路線納入香山、南寮。",
+        "依通勤、就醫、採買需求重新盤點公車路線；提出通學專車。",
+        "整合行人空間、公共運輸、號誌與道路配置，系統性改善人本交通。"
+      ],
+      "sources": ["cna-202609160107", "nownews-6875523"],
+      "challenges": []
+    },
+    "education": {
+      "summary": "增班與就近入學、關埔教育設施、教師留才與特教支持。",
+      "points": [
+        "因應人口成長，以增班、增加就近入學機會提升量能。",
+        "加速關埔地區教育設施規劃。",
+        "推動教師留才、行政減量與特教支持。"
+      ],
+      "sources": ["cna-202609160107"],
+      "challenges": []
+    },
+    "economy": {
+      "summary": "打造「新竹好物」在地農產品牌。",
+      "points": ["推動「新竹好物」品牌，提升香山等地農產品價值。"],
+      "sources": ["udn-9603576"],
+      "challenges": []
+    }
+  },
+  "controversies": [],
+  "updated": "2026-11-16"
+}

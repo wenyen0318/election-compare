@@ -1,0 +1,88 @@
+{
+  "id": "kao-hung-an",
+  "name": "高虹安",
+  "region": "hsinchu-city",
+  "party": "無黨籍（國民黨表態支持）",
+  "ballotNo": null,
+  "incumbent": true,
+  "status": "full",
+  "photo": null,
+  "tagline": "以民生福利與施政成果爭取連任",
+  "taglineSources": ["cna-202609160107"],
+  "experience": [
+    { "period": "2022–", "title": "新竹市長（現任；2024 年因一審判決停職，2025 年 12 月二審後復職）", "sources": ["tvbs-assistant-fee"] },
+    { "period": "2020–2022", "title": "立法委員（不分區）", "sources": [] }
+  ],
+  "highlights": ["education", "eldercare", "economy"],
+  "policies": {
+    "education": {
+      "summary": "國中小營養午餐免費、「竹市壯壯卡」擴及國中生、28 校通學步道。",
+      "points": [
+        "2026 年 8 月起國中小營養午餐免費。",
+        "「生生好骨力、竹市壯壯卡」11 月起擴大到國中生，可免費兌換乳品、豆漿或優酪乳。",
+        "持續推動 28 校通學步道與校舍整建。"
+      ],
+      "sources": ["cna-202609160107"],
+      "challenges": []
+    },
+    "eldercare": {
+      "summary": "敬老卡、愛心卡點數提高到每月 1200 點，長者健保費補助。",
+      "points": [
+        "敬老卡及愛心卡使用範圍擴大，2026 年 10 月起每月點數由 800 點提高到 1200 點。",
+        "符合資格的 65 歲以上長者、55 歲以上原住民，每月最高 826 元健保費補助。"
+      ],
+      "sources": ["cna-202609160107"],
+      "challenges": []
+    },
+    "economy": {
+      "summary": "AI 治理、與桃竹苗跨縣市合作培育 AI 人才。",
+      "points": ["與桃園市合作培育 AI 與智慧產業人才，主張將 AI 治理導入城市治理。"],
+      "sources": ["udn-9603576"],
+      "challenges": []
+    },
+    "transport": {
+      "summary": "延續交通改善建設。",
+      "points": ["競辦表示持續推動交通改善；目前查到的報導未列出具體路線或時程。"],
+      "sources": ["cna-202609160107"],
+      "challenges": [
+        {
+          "by": "莊競程（對手）", "byType": "opponent", "date": "2026-10-16",
+          "content": "表示自己提出政見後，高虹安市府很快就會跟進，認為新竹需要更主動發現問題的市府。",
+          "sources": ["nownews-6875523"],
+          "response": null
+        }
+      ]
+    }
+  },
+  "controversies": [
+    {
+      "title": "立委時期助理費案",
+      "by": "檢方起訴（司法案件）", "byType": "media", "date": "2025-12-16",
+      "content": "高虹安立委任內被控詐領助理費，一審依貪污罪判 7 年 4 個月並停職；2025 年 12 月台灣高等法院二審改判貪污部分無罪，以使公務員登載不實罪判 6 個月、得易科罰金，全案可上訴。",
+      "sources": ["storm-assistant-fee", "tvbs-assistant-fee"],
+      "response": { "date": "2025-12-18", "content": "復職時表示這一年是人生被迫按下暫停鍵的漫長時光，並感謝市府同仁、市民與家人。", "sources": ["storm-assistant-fee", "tvbs-assistant-fee"] }
+    },
+    {
+      "title": "新竹棒球場",
+      "by": "網路流傳訊息", "byType": "public", "date": "2026-09-18",
+      "content": "坊間流傳新竹市立棒球場「未驗收就比賽」等說法。",
+      "sources": ["storm-gao-keyword"],
+      "response": { "date": "2026-09-18", "content": "在臉書澄清棒球場已完成驗收，沒有「未驗收就比賽」。", "sources": ["storm-gao-keyword"] }
+    },
+    {
+      "title": "棒球場開幕活動經費",
+      "by": "莊競程（對手）", "byType": "opponent", "date": "2026-09-21",
+      "content": "批評棒球場工程問題被拖成近 4 年的政治攻防，選前還要再花約 3000 萬元辦開幕活動。",
+      "sources": ["storm-gao-keyword"],
+      "response": null
+    },
+    {
+      "title": "未出席青年論壇",
+      "by": "莊競程、何志勇（對手）", "byType": "opponent", "date": "2026-10-22",
+      "content": "兩位對手共同召開記者會，邀請高虹安出席青年團體主辦的市長候選人論壇、接受青年提問。",
+      "sources": ["nownews-6877255"],
+      "response": null
+    }
+  ],
+  "updated": "2026-11-16"
+}

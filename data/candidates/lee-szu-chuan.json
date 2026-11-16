@@ -1,0 +1,92 @@
+{
+  "id": "lee-szu-chuan",
+  "name": "李四川",
+  "region": "new-taipei",
+  "party": "中國國民黨",
+  "ballotNo": null,
+  "incumbent": false,
+  "status": "full",
+  "photo": null,
+  "tagline": "主打 40 年工程經驗、「做事的人」",
+  "taglineSources": ["pts-835153", "udn-9575861"],
+  "experience": [
+    { "period": "", "title": "從基層公務員做起", "sources": ["udn-9575861"] },
+    { "period": "", "title": "曾任新北市、高雄市、臺北市副市長", "sources": ["udn-9575861"] }
+  ],
+  "highlights": ["childcare", "renewal", "transport"],
+  "policies": {
+    "childcare": {
+      "summary": "「校校有公托」，好孕專車延長到孩子滿 1 歲。",
+      "points": [
+        "校校有公托。",
+        "好孕專車補助由產後 6 個月延長至孩子滿 1 歲。",
+        "在國民運動中心試辦免費親子臨托。",
+        "打造大型室內親子成長館。"
+      ],
+      "sources": ["pts-800056", "udn-9642137"],
+      "challenges": [
+        {
+          "by": "蘇巧慧（對手）", "byType": "opponent", "date": "2026-03-19",
+          "content": "表示台北市的「校校有公托」是向新北市取經，新北 2011 年就開始盤點閒置教室增設公托，量能早已超越台北。",
+          "sources": ["udn-9390741"],
+          "response": null
+        }
+      ]
+    },
+    "eldercare": {
+      "summary": "敬老卡 300 點「悠遊卡化」，可用於看診、領藥、超商消費。",
+      "points": [
+        "敬老卡其中 300 點轉為悠遊卡功能，讓偏鄉較少搭捷運的長輩也能用在看診、領藥、藥局與超商消費。"
+      ],
+      "sources": ["taiwannews-6363353", "udn-9578248"],
+      "challenges": []
+    },
+    "transport": {
+      "summary": "雙北 30 分鐘生活圈、推動雙北共治。",
+      "points": [
+        "將一日生活圈縮短成「雙北 30 分鐘生活圈」，提出「南有巨蛋城、北有科學城」。",
+        "若與台北市長共同執政，推動雙北交通、文化、教育、環保更緊密合作。"
+      ],
+      "sources": ["pts-835153", "taiwannews-6363353"],
+      "challenges": []
+    },
+    "tourism": {
+      "summary": "九份纜車、水金九台車觀光。",
+      "points": ["2026 年 4 月提出九份纜車及水湳洞、金瓜石、九份地區台車觀光政見，希望強化在地觀光、紓解交通與停車壓力。"],
+      "sources": ["udn-9578248"],
+      "challenges": [
+        {
+          "by": "蘇巧慧（對手）", "byType": "opponent", "date": "2026-06-21",
+          "content": "表示「台車再復興」構想她在 2024 年的影片中就已提出。",
+          "sources": ["newtalk-1042448"],
+          "response": { "date": "2026-06-21", "content": "競辦發言人表示李四川任職新北市府期間曾四度實地勘查纜車與台車路線，並批評以兩年前影片中的一句話當作政見。", "sources": ["nownews-6848689"] }
+        }
+      ]
+    },
+    "education": {
+      "summary": "建置 AI 校園。",
+      "points": ["與教育團體座談時發表建置 AI 校園等教育政策；目前查到的報導未說明細節。"],
+      "sources": ["udn-9603838"],
+      "challenges": []
+    },
+    "renewal": {
+      "summary": "檢討提高基準容積、市長親自召集跨局處委員會；「居住新五箭」。",
+      "points": [
+        "檢討基準容積，成立由市長召集的委員會，局處介面問題由市長裁決。",
+        "「居住新五箭」：捷運開發納入社會住宅、婚育宅加碼可住 20 年等。"
+      ],
+      "sources": ["pts-835153", "tvbs-4021021"],
+      "challenges": []
+    }
+  },
+  "controversies": [
+    {
+      "title": "新北大巨蛋選址",
+      "by": "民進黨新北市議會黨團", "byType": "opponent", "date": "2026-03-21",
+      "content": "批評新北大巨蛋自 2024 年喊出構想至 2026 年仍停留在選址階段。",
+      "sources": ["pts-800056"],
+      "response": { "date": "2026-03-21", "content": "表示依台北大巨蛋經驗，選址應交通方便、稍微遠離住宅區，最好有捷運、高鐵等大眾運輸可疏導。", "sources": ["pts-800056"] }
+    }
+  ],
+  "updated": "2026-11-16"
+}

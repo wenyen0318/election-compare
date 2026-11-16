@@ -1,0 +1,9 @@
+{
+  "id": "hsinchu-county",
+  "name": "新竹縣",
+  "office": "新竹縣長",
+  "election": "2026 地方公職人員選舉（11/28 投票）",
+  "intro": "一句話描述選情結構（例如：現任縣長任期屆滿／尋求連任，共 N 人登記）",
+  "candidates": ["candidate-id-1", "candidate-id-2"],
+  "sources": ["登記名單來源id"]
+}

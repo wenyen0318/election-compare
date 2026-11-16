@@ -1,0 +1,11 @@
+[
+  { "id": "childcare",  "name": "育兒", "icon": "🍼", "desc": "托育、生育補助、親子空間" },
+  { "id": "eldercare",  "name": "長照", "icon": "🧓", "desc": "長者福利、敬老卡、照顧服務" },
+  { "id": "transport",  "name": "交通", "icon": "🚇", "desc": "捷運、公車、道路與人本交通" },
+  { "id": "economy",    "name": "經濟", "icon": "💼", "desc": "產業、財政、就業與市民補助" },
+  { "id": "tourism",    "name": "觀光", "icon": "🧭", "desc": "觀光建設與城市行銷" },
+  { "id": "education",  "name": "教育", "icon": "📚", "desc": "營養午餐、校園、人才培育" },
+  { "id": "renewal",    "name": "都更", "icon": "🏗️", "desc": "都市更新、老屋與居住" },
+  { "id": "greening",   "name": "綠化", "icon": "🌳", "desc": "植樹、公園、環境永續" },
+  { "id": "safety",     "name": "治安", "icon": "🛡️", "desc": "治安、毒品、交通安全執法" }
+]

@@ -1,0 +1,35 @@
+{
+  "id": "姓名英文拼音-小寫-連字號（同檔名）",
+  "name": "候選人姓名",
+  "region": "地區id（需存在於 data/regions.json）",
+  "party": "政黨全名或「無黨籍」",
+  "ballotNo": null,
+  "incumbent": false,
+  "status": "stub",
+  "photo": null,
+  "tagline": "已依法完成登記參選，政見資料整理中",
+  "taglineSources": ["登記名單的來源id"],
+  "experience": [
+    { "period": "YYYY–YYYY", "title": "職稱", "sources": ["來源id"] }
+  ],
+  "highlights": [],
+  "policies": {
+    "childcare": {
+      "summary": "一句話摘要（≤60字）",
+      "points": ["具體做法"],
+      "sources": ["來源id"],
+      "challenges": [
+        {
+          "by": "提出者姓名（身分）",
+          "byType": "opponent",
+          "date": "YYYY-MM-DD",
+          "content": "質疑內容（改寫）",
+          "sources": ["來源id"],
+          "response": null
+        }
+      ]
+    }
+  },
+  "controversies": [],
+  "updated": "YYYY-MM-DD"
+}

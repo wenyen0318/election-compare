@@ -1,0 +1,165 @@
+{
+  "id": "puma-shen",
+  "name": "沈伯洋",
+  "region": "taipei",
+  "party": "民主進步黨",
+  "ballotNo": null,
+  "incumbent": false,
+  "status": "full",
+  "photo": null,
+  "tagline": "「台北順起來」",
+  "taglineSources": ["pts-debate-tpe"],
+  "experience": [
+    { "period": "2024–", "title": "立法委員（不分區）", "sources": [] },
+    { "period": "", "title": "國立臺北大學犯罪學研究所副教授", "sources": [] },
+    { "period": "", "title": "曾任職犯罪被害人保護協會（辯論中自述）", "sources": ["pts-debate-tpe"] }
+  ],
+  "highlights": ["renewal", "transport", "greening"],
+  "policies": {
+    "childcare": {
+      "summary": "延伸好孕專車、設立「家庭1999」育兒諮詢。",
+      "points": [
+        "延續好孕專車，未用完的乘車金可轉入親子同行卡。",
+        "設立「家庭1999」，讓育兒家庭隨時諮詢、降低育兒焦慮。",
+        "辯論中提及自己推動托育專法。"
+      ],
+      "sources": ["pts-834975", "pts-debate-tpe"],
+      "challenges": []
+    },
+    "eldercare": {
+      "summary": "「健身小巴」：長者下樓就能接觸教練與營養師。",
+      "points": ["提出「健身小巴」，讓長者下樓即可接觸教練與營養師。"],
+      "sources": ["pts-debate-tpe"],
+      "challenges": []
+    },
+    "transport": {
+      "summary": "捷運總體檢、公車重規劃，市民大道南北「縫合」。",
+      "points": [
+        "推動捷運總體檢、公車路網重新規劃。",
+        "提出山林徑、文化徑。",
+        "主張市民大道南北「縫合」，並規劃跨基隆河自行車橋。"
+      ],
+      "sources": ["pts-debate-tpe"],
+      "challenges": [
+        {
+          "by": "蔣萬安（對手）", "byType": "opponent", "date": "2026-10-31",
+          "content": "質疑 9.5 億元跨基隆河自行車橋在巷道寬度、停車架與種樹空間等細節未具體說明。",
+          "sources": ["pts-debate-tpe"],
+          "response": null
+        },
+        {
+          "by": "蔣萬安（對手）", "byType": "opponent", "date": "2026-10-31",
+          "content": "質疑市民大道高架橋下藝廊廊帶的土地與停車規劃。",
+          "sources": ["pts-debate-tpe"],
+          "response": { "date": "2026-10-31", "content": "表示該廊帶屬跨縣市規劃，並認為台北適合發展 AI 應用層。", "sources": ["pts-debate-tpe"] }
+        }
+      ]
+    },
+    "economy": {
+      "summary": "成立「台北研究院」培育 AI 人才，長期發展 AI 與藝文產業。",
+      "points": [
+        "推動台北研究院，讓 AI 人才從小扎根。",
+        "長期規劃 AI 產業與藝文產業發展。",
+        "短期優先推動公務員減壓。"
+      ],
+      "sources": ["pts-834975", "pts-debate-tpe"],
+      "challenges": [
+        {
+          "by": "蔣萬安（對手）", "byType": "opponent", "date": "2026-10-31",
+          "content": "質疑沈伯洋對普發現金與《財政收支劃分法》的立場未說清楚。",
+          "sources": ["pts-debate-tpe"],
+          "response": { "date": "2026-10-31", "content": "表示過去反對普發是因為需要舉債，現在因有 AI 紅利而支持；並批評財劃法修法違反憲法與權責分立原則。", "sources": ["pts-debate-tpe"] }
+        }
+      ]
+    },
+    "education": {
+      "summary": "營養午餐費用隨物價調整、取消廚餘秤重。",
+      "points": [
+        "推動營養午餐費用隨物價調整的條例。",
+        "取消廚餘秤重。",
+        "以台北研究院培育 AI 人才。"
+      ],
+      "sources": ["pts-debate-tpe"],
+      "challenges": [
+        {
+          "by": "蔣萬安（對手）", "byType": "opponent", "date": "2026-10-31",
+          "content": "質疑沈伯洋不了解營養午餐，指其把「三章一Q」說成「三規一章」。",
+          "sources": ["pts-debate-tpe"],
+          "response": { "date": "2026-10-31", "content": "澄清自己並未反對免費營養午餐，也未指稱發生食物中毒。", "sources": ["pts-debate-tpe"] }
+        }
+      ]
+    },
+    "renewal": {
+      "summary": "「無限都更」：公有地先蓋、住戶只搬一次，搭配耐震初篩與陪伴服務。",
+      "points": [
+        "先在公有地興建住宅，再透過住戶交換機制讓有意願者「只搬一次」；估計第一處從啟動到完工需 3 至 4 年。",
+        "建立長期停滯都更案的退場機制。",
+        "三階段：建物耐震風險初篩 → 主動派服務團隊提供補助 → 揭露評估資訊；借鏡東京權利變換制度。"
+      ],
+      "sources": ["pts-834975", "pts-debate-tpe"],
+      "challenges": [
+        {
+          "by": "外界疑慮（媒體報導）", "byType": "public", "date": "2026-11-09",
+          "content": "外界擔心「無限都更」會取代現有的自辦都更或建商合建。",
+          "sources": ["pts-834975"],
+          "response": { "date": "2026-11-09", "content": "表示無限都更與既有自辦都更、建商合作案並行，是多一個選項而非取代。", "sources": ["pts-834975"] }
+        },
+        {
+          "by": "蔣萬安（對手）", "byType": "opponent", "date": "2026-10-31",
+          "content": "質疑沈伯洋沒有具體都更政見，並表示耐震初篩市府早已在做。",
+          "sources": ["pts-debate-tpe"],
+          "response": { "date": "2026-10-31", "content": "表示都更的重點在於「陪伴」，都更是入口寬、出口窄。", "sources": ["pts-debate-tpe"] }
+        },
+        {
+          "by": "蔣萬安（對手）", "byType": "opponent", "date": "2026-10-31",
+          "content": "詢問斯文里二期等案難以推動的原因，並指出松山機場航高限制的影響。",
+          "sources": ["pts-debate-tpe"],
+          "response": null
+        }
+      ]
+    },
+    "greening": {
+      "summary": "上任百日內完成種樹，以專法、專款、專業處理樹木保護。",
+      "points": [
+        "上任百日內完成種樹。",
+        "以專法、專款、專業處理樹木議題。",
+        "推動山林徑、文化徑。"
+      ],
+      "sources": ["pts-debate-tpe"],
+      "challenges": []
+    },
+    "safety": {
+      "summary": "以 SBIRT 問卷取代生物篩檢，加強校園拒毒教育、阻斷毒品來源。",
+      "points": [
+        "以 SBIRT 問卷取代生物篩檢。",
+        "加強校園拒毒教育、阻斷毒品來源、檢視臨檢警力配置。"
+      ],
+      "sources": ["pts-debate-tpe"],
+      "challenges": [
+        {
+          "by": "蔣萬安（對手）", "byType": "opponent", "date": "2026-10-31",
+          "content": "質疑沈伯洋反對酒駕預防性羈押，且未參與毒駕致死加重刑責的立法投票，是否站在被害人立場。",
+          "sources": ["pts-debate-tpe"],
+          "response": { "date": "2026-10-31", "content": "表示反對的是不符比例原則的修法版本，支持加重刑責但認為政院版較完整；並提到自己曾在犯罪被害人保護協會工作、協助青少年與戒毒者回歸社會。", "sources": ["pts-debate-tpe"] }
+        }
+      ]
+    }
+  },
+  "controversies": [
+    {
+      "title": "對罷免、陸配言論自由等議題的立場",
+      "by": "蔣萬安（對手）", "byType": "opponent", "date": "2026-10-31",
+      "content": "批評沈伯洋在罷免、陸配言論自由等議題說法前後不一，並稱其「縫合」主張天馬行空。",
+      "sources": ["pts-debate-tpe"],
+      "response": null
+    },
+    {
+      "title": "對「雙城論壇」的評論",
+      "by": "蔣萬安（對手）", "byType": "opponent", "date": "2026-10-31",
+      "content": "引述沈伯洋過去批評台北上海雙城論壇的言論提出質疑。",
+      "sources": ["pts-debate-tpe"],
+      "response": { "date": "2026-10-31", "content": "表示如果善意交流換來的是軍演，那才是國安問題。", "sources": ["pts-debate-tpe"] }
+    }
+  ],
+  "updated": "2026-11-16"
+}
